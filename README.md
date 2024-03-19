@@ -70,4 +70,7 @@ This app's API server has the following list of endpoints:
   - 403 unauthorized; display if user tries to access user page without logging in
   - 400 bad request
   - 500 internal server error
-Auth
+
+## Auth
+#### Token-Based Authentication for Childcare Providers
+Token-based authentication is a common method used to secure web applications. It involves issuing a token to authenticated users, which they then include in subsequent requests to authenticate themselves.
