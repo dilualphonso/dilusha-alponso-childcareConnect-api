@@ -31,11 +31,11 @@ This app currently includes the following list of features
 <div style="display: flex; justify-content: space-between; flex-direction:row">
     <!-- First image with specific size -->
 
-      <img style="flex: 1; src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png" alt="Image Description" width="200" height="200">
+      <img style="flex: 1"; src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png" alt="Image Description" width="200" height="200">
   
     <!-- Second image with specific size -->
 
-      <img style="flex: 1; src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+      <img style="flex: 1"; src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
 
     <div style="flex: 1;">
       <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
