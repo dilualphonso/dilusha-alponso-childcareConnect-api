@@ -78,17 +78,6 @@ This app's API server has the following list of endpoints:
    - Description: Search for daycare centers based on specified filters.
 
 
-#### Children API Endpoints
-
-- /api/daycares/children
-    - GET: Get a list of children from a particular daycare
-    - POST: Enroll a new child with details
-
-- /api/daycares/children/:id
-    - GET: Get detailed information about a specific child
-    - PUT: Update details for a specific child
-    - DELETE: Remove a specific child from the daycare
-
 #### Responses: 
   - 200 success for all GET and PUT/PATCH requests
   - 201 created new content for POST requests
@@ -158,6 +147,11 @@ Token-based authentication is a common method used to secure web applications. I
 - Create a login page for parents to access their accounts.
 - Implement authentication using JWT (JSON Web Tokens) for secure login.
 - Upon login, parents can view child-related details such as enrollment status, schedules, etc.
+
+#### Child entrollement 
+- Allow users to entroll chidrend' details.
+- Display child detail view.
+
 
 
   
