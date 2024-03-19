@@ -24,5 +24,5 @@ This app currently includes the following list of features
 - Authentication: JWT for user authentication
 
 ## Sitemap
-![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/main/userdiagram.png)
+![userdiagram] (https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/main/userdiagram.png)
 
