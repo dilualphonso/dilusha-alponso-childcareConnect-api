@@ -76,6 +76,12 @@ This app's API server has the following list of endpoints:
 - **GET Search Daycare Centers**
    - Endpoint: `/api/daycares/search`
    - Description: Search for daycare centers based on specified filters.
+ 
+ - **Get reviews**
+- Endpoint: `/api/daycares/:id/reviews`
+- **Post reviews**
+- Endpoint: `/api/daycares/:id/reviews`
+ 
 
 
 #### Responses: 
@@ -115,14 +121,10 @@ Token-based authentication is a common method used to secure web applications. I
 - Implement search input field on the daycare profile listing page
 - Update frontend to display search results 
 
-  
+ ## Sprint 3
+  - Allow users to add reviews and ratings for daycare centers.
+  - 
 ## Nice-to-haves
-
-#### Reviews for Daycares:
-- Allow users to add reviews and ratings for daycare centers.
-- Display average ratings and individual reviews on daycare detail pages.
-- Provide a form for users to submit reviews with ratings and comments.
-
 #### Google Maps Integration:
 - Implement Google Maps integration for displaying daycare locations.
 - Show daycare locations on a map in the search results and detail view.
