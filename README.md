@@ -28,7 +28,7 @@ This app currently includes the following list of features
 
 ## Mockup wireframes
 
-<div style="display: flex; justify-content: space-between; flex-direction:row">
+<div style="display: flex; justify-content: space-between;">
     <!-- First image with specific size -->
    <div style="flex: 1;">
       <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png" alt="Image Description" width="200" height="200">
@@ -43,6 +43,8 @@ This app currently includes the following list of features
     </div>
 </div>
 
+## Data
+   <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/data.png" alt="Image Description" width="500" height="500">
 
 ## Endpoints
 This app's API server has the following list of endpoints:
