@@ -93,6 +93,7 @@ Token-based authentication is a common method used to secure web applications. I
 ## Roadmap
 ## Sprint 1
 #### Backend Tasks:
+- Set up project structure
 - Implement GET endpoint to retrieve all daycares
 - Implement GET endpoint to retrieve a single daycare by ID
 - Implement POST endpoint to create a new daycare 
