@@ -24,14 +24,14 @@ This app currently includes the following list of features
 - Authentication: JWT for user authentication
 
 ## Sitemap
-![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
+![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/userdiagram.jpg)
 
 ## Mockup wireframes
 
 <div style="display: flex; justify-content: space-between;">
     <!-- First image with specific size -->
    <div style="flex: 1;">
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/home.png" alt="Image Description" width="200" height="200">
       </div>
     <!-- Second image with specific size -->
     <div style="flex: 1;">
