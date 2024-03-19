@@ -7,7 +7,7 @@ Parents in Ontario face challenges when searching for quality childcare or Monte
 
 ## User profile
 
-For those utilizing the Childcare Finder Web Application, this platform offers a beacon of reassurance in the whirlwind of parenthood. Designed with the needs of working parents, particularly moms, at its core, this application provides a seamless solution to the common challenge of finding quality childcare within budget constraints. By empowering users with a meticulously curated database of daycare options, detailed profiles, and real reviews, it simplifies the daunting task of choosing the best care for their child's development. Whether navigating busy work schedules or seeking affordable excellence, this app is a trusted companion, dedicated to making one of the most critical decisions for a child's well-being a smoother, more informed, and ultimately empowering experience
+A ChildcareConnect web application is a trusted app for working parents specially for mom to find quality daycare at an affordable price
 
 ## Features
 This app currently includes the following list of features
