@@ -76,10 +76,40 @@ This app's API server has the following list of endpoints:
 Token-based authentication is a common method used to secure web applications. It involves issuing a token to authenticated users, which they then include in subsequent requests to authenticate themselves.
 
 ## Roadmap
-#### Sprint1
-#### Daycare  Backend
-- Create backend API endpoints for managing daycare profiles.
-- Implement search functionality to retrieve daycare data based on user queries.
-#### Daycare Profile Frontend:
--Create frontend components for managing daycare profiles.
--Implement search functionality to retrieve daycare data based on user queries.
+## Sprint 1
+#### Backend Tasks:
+- Implement GET endpoint to retrieve all daycares
+- Implement GET endpoint to retrieve a single daycare by ID
+- Implement POST endpoint to create a new daycare 
+- Implement PUT endpoint to update an existing daycare
+
+#### Frontend Tasks:
+- Set up project structure
+- Create daycare listing page
+- Create daycare  detail page
+- Integrate backend API endpoints with frontend pages
+
+ ## Sprint 2
+
+#### Backend Tasks:
+- Add search functionality to GET endpoint for retrieving daycare 
+- Allow users to search daycares by daycare name
+
+#### Frontend Tasks:
+- Implement search input field on the daycare profile listing page
+- Update frontend to display search results 
+
+## Sprint 3
+
+#### Backend Tasks:
+- Implement GET endpoint to retrieve all children
+- Implement GET endpoint to retrieve a single child by ID
+- Implement POST endpoint to entroll new child
+- Implement PUT endpoint to update an existing child
+- Implement DELETE endpoint to update an existing child
+
+#### Frontend Tasks:
+- need to implement every thing to diplay the child details
+
+
+  
