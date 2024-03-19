@@ -35,20 +35,20 @@ This app currently includes the following list of features
       </div>
     <!-- Second image with specific size -->
     <div style="flex: 1;">
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
   </div>
     <div style="flex: 1;">
         </div>
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
     </div>
       <div style="flex: 1;">
         </div>
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
     </div>
 </div>
 
 ## Data
-   <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/data.png" alt="Image Description" width="500" height="500">
+   <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/data.png" alt="Image Description" width="500" height="500">
 
 ## Endpoints
 This app's API server has the following list of endpoints:
