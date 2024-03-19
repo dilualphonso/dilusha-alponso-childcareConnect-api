@@ -138,7 +138,7 @@ Token-based authentication is a common method used to secure web applications. I
 - Upon login, parents can view child-related details such as enrollment status, schedules, etc.
 
 #### Child entrollement 
-- Allow users to entroll chidrend' details.
+- Allow users to entroll childrens' details.
 - Display child detail view.
 
 
