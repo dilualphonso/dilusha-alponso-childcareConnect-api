@@ -27,7 +27,8 @@ This app currently includes the following list of features
 ![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
 
 ## Mockup wireframes
-![image1](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/Untitled-2024-03-08-1646.png)
+![image1](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png)![image2](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/Untitled-2024-03-08-1646.png)
+
 
 ## Endpoints
 This app's API server has the following list of endpoints:
