@@ -114,17 +114,6 @@ Token-based authentication is a common method used to secure web applications. I
 - Implement search input field on the daycare profile listing page
 - Update frontend to display search results 
 
-## Sprint 3
-
-#### Backend Tasks:
-- Implement GET endpoint to retrieve all children
-- Implement GET endpoint to retrieve a single child by ID
-- Implement POST endpoint to entroll new child
-- Implement PUT endpoint to update an existing child
-- Implement DELETE endpoint to update an existing child
-
-#### Frontend Tasks:
-- need to implement every thing to diplay the child details
   
 ## Nice-to-haves
 
