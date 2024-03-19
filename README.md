@@ -74,3 +74,8 @@ This app's API server has the following list of endpoints:
 ## Auth
 #### Token-Based Authentication for Childcare Providers
 Token-based authentication is a common method used to secure web applications. It involves issuing a token to authenticated users, which they then include in subsequent requests to authenticate themselves.
+
+###Sprint1
+- Daycare Profile Backend:
+   -Create backend API endpoints for managing daycare profiles.
+   -Implement search functionality to retrieve daycare data based on user queries.
