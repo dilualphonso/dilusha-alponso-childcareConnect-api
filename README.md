@@ -26,6 +26,9 @@ This app currently includes the following list of features
 ## Sitemap
 ![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
 
+####Mockup wireframes
+![image1](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
+
 ## Endpoints
 This app's API server has the following list of endpoints:
 
@@ -63,7 +66,7 @@ This app's API server has the following list of endpoints:
     - PUT: Update details for a specific child
     - DELETE: Remove a specific child from the daycare
 
-#### RESPONSES: 
+#### Responses: 
   - 200 success for all GET and PUT/PATCH requests
   - 201 created new content for POST requests
   - 404 not found
@@ -110,6 +113,28 @@ Token-based authentication is a common method used to secure web applications. I
 
 #### Frontend Tasks:
 - need to implement every thing to diplay the child details
+  
+## Nice-to-haves
+
+#### Reviews for Daycares:
+- Allow users to add reviews and ratings for daycare centers.
+- Display average ratings and individual reviews on daycare detail pages.
+- Provide a form for users to submit reviews with ratings and comments.
+
+#### Google Maps Integration:
+- Implement Google Maps integration for displaying daycare locations.
+- Show daycare locations on a map in the search results and detail view.
+- Allow users to interact with the map (zoom, pan, etc.) to explore daycare locations.
+
+#### Pagination for Daycare Details:
+- Implement pagination for daycare detail pages.
+- Display a limited number of daycare details per page with pagination controls.
+- Allow users to navigate through multiple pages of daycare details.
+
+#### Login Functionality for Parents:
+- Create a login page for parents to access their accounts.
+- Implement authentication using JWT (JSON Web Tokens) for secure login.
+- Upon login, parents can view child-related details such as enrollment status, schedules, etc.
 
 
   
