@@ -26,3 +26,48 @@ This app currently includes the following list of features
 ## Sitemap
 ![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
 
+## Endpoints
+This app's API server has the following list of endpoints:
+
+####  HTTP methods:
+
+- **GET All Daycare Centers**
+   - Endpoint: `/api/daycares`
+   - Description: Retrieve a list of all daycare centers.
+
+- **GET Daycare Center by ID**
+   - Endpoint: `/api/daycares/:id`
+   - Description: Get details of a specific daycare center by its ID.
+
+- **POST New Daycare Center**
+   - Endpoint: `/api/daycares`
+   - Description: Create a new daycare center.
+
+- **PUT Update Daycare Center by ID**
+   - Endpoint: `/api/daycares/:id`
+   - Description: Edit details of a specific daycare center by its ID.
+
+- **GET Search Daycare Centers**
+   - Endpoint: `/api/daycares/search`
+   - Description: Search for daycare centers based on specified filters.
+
+
+#### Children API Endpoints
+
+- /api/daycares/children
+    - GET: Get a list of children from a particular daycare
+    - POST: Enroll a new child with details
+
+- /api/daycares/children/:id
+    - GET: Get detailed information about a specific child
+    - PUT: Update details for a specific child
+    - DELETE: Remove a specific child from the daycare
+
+#### RESPONSES: 
+  - 200 success for all GET and PUT/PATCH requests
+  - 201 created new content for POST requests
+  - 404 not found
+  - 403 unauthorized; display if user tries to access user page without logging in
+  - 400 bad request
+  - 500 internal server error
+Auth
