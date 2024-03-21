@@ -1,0 +1,25 @@
+{
+  "name": "dilusha-alponso-childcareconnect-api",
+  "version": "1.0.0",
+  "description": "In today’s whirlwind of responsibilities, childcare stands as a vital pillar in the lives of many families, especially for working parents. The challenge of finding a quality daycare that meets both the needs of the child and the budget of the family is a common one. The Childcare connect Web Application aims to address this challenge, particularly in the Ontario region. Understanding the heart of the matter, this application acknowledges the tireless efforts of parents, particularly working moms, in seeking that elusive balance of excellent childcare and affordability. It’s more than a mere directory, it’s a meticulously designed solution, poised to empower parents in one of the most critical decisions for their child’s well-being",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "knex migrate:latest",
+    "migrate:down": "knex migrate:down",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "knex": "^3.1.0",
+    "mysql2": "^3.9.2",
+    "nodemon": "^3.1.0"
+  }
+}
