@@ -19,6 +19,8 @@ exports.up = function (knex) {
       table.string('region').notNullable();
       table.string('postalcode').notNullable();
       table.string('country').notNullable();
+      table.string('latitude').notNullable();
+      table.string('longitude').notNullable();
      table.string('owner_name').notNullable();
       table.string('age_range').notNullable();
       table.string('years').notNullable();

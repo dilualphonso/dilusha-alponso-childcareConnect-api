@@ -9,6 +9,26 @@ const index = async (_req, res) => {
   }
 }
 
+
+const createDaycare = async (req, res) => {
+  try {
+    // Add the validated body into the warehouses database
+    const result = await knex("daycares").insert(req.body);
+    // Grab the id of the item just created
+    const newDaycareId = result[0];
+    // Grab the warehouse object that was just created
+    const createdDaycare = await knex("daycares").where({ id: newDaycareId });
+
+    // Return the response of a successful creation with the created warehouse data
+    res.status(201).json(createdDaycare[0]);
+  } catch (error) {
+    // Server error
+    console.log(error);
+    res.status(500).send(`Unable to create new Daycare.`);
+  }
+};
+
 module.exports = {
-  index
+  index,
+  createDaycare
 }
