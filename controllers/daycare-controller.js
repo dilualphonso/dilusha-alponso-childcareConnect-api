@@ -1,8 +1,28 @@
 const knex = require('knex')(require('../knexfile'));
 
-const index = async (_req, res) => {
+const index = async (req, res) => {
   try {
-    const data = await knex('daycares');
+    const searchWord = req.query.s;
+    let query = knex("daycares");
+
+    if (searchWord) {
+      query.where(research => {
+        research.where('daycares.childcare_name', 'LIKE', `%${searchWord}%`)
+          .orWhere('daycares.city', 'LIKE', `%${searchWord}%`)
+          .orWhere('daycares.region', 'LIKE', `%${searchWord}%`)
+          .orWhere('daycares.country', 'LIKE', `%${searchWord}%`)
+
+          .select('*');
+      })
+    }
+    const data = await query;
+
+    if (data.length === 0) {
+      return res
+        .status(200)
+        .send({ message: `No result` });
+    }
+
     res.status(200).json(data);
   } catch(err) {
     res.status(400).send(`Error retrieving Users: ${err}`)
