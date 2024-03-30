@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config();
 const daycareRoute = require('./routes/daycare-route');
+const userRoute = require('./routes/user-route');
 
 
 const app = express();
@@ -25,7 +26,7 @@ app.get('/', (_req, res) => {
 //warehouse list base route
 app.use('/api', daycareRoute);
 //inventory list route
-
+app.use('/api/users', userRoute);
 
 app.listen(port, () => {
   console.log(`Listening on ${port}`);
