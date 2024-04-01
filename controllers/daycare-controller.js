@@ -2,7 +2,9 @@ const knex = require('knex')(require('../knexfile'));
 
 const index= async (req, res) => {
   try {
-
+    const { sort_by, order_by } = req.query;
+    const sortBy = sort_by || '';
+    const orderBy = order_by && order_by.toLowerCase() === 'desc' ? 'desc' : 'asc';
     const searchWord = req.query.s;
     let query = knex("daycares")
       .leftJoin("reviews", "reviews.daycare_id", "daycares.id")
@@ -34,6 +36,19 @@ const index= async (req, res) => {
 
             .select('*');
         })
+      }
+      if (sortBy) {
+        if (sortBy === 'meanRating') {
+          query.select(knex.raw('IFNULL(SUM(reviews.rating) / NULLIF(COUNT(reviews.id), 0), 0) AS meanRating'));
+          query.orderBy('meanRating', orderBy);
+        } else {
+          const sortCriteria = sortBy.split(',');
+          sortCriteria.forEach(criteria => {
+            const [column, order] = criteria.trim().split(':');
+            const direction = order && order.toLowerCase() === 'desc' ? 'desc' : 'asc';
+            query.orderBy(column, direction);
+          });
+        }
       }
 
     const data = await query;

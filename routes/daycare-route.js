@@ -19,8 +19,5 @@ router.route('/daycares')
   .post(reviewController.postReview)
 
 
-  // router.route('/daycares/review/rating').get(daycareController.getList);
-
-
 
 module.exports = router;
