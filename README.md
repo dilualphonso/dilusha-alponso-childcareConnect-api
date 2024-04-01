@@ -7,7 +7,7 @@ Parents in Ontario face challenges when searching for quality childcare or Monte
 
 ## User profile
 
-For those utilizing the Childcare Finder Web Application, this platform offers a beacon of reassurance in the whirlwind of parenthood. Designed with the needs of working parents, particularly moms, at its core, this application provides a seamless solution to the common challenge of finding quality childcare within budget constraints. By empowering users with a meticulously curated database of daycare options, detailed profiles, and real reviews, it simplifies the daunting task of choosing the best care for their child's development. Whether navigating busy work schedules or seeking affordable excellence, this app is a trusted companion, dedicated to making one of the most critical decisions for a child's well-being a smoother, more informed, and ultimately empowering experience
+A ChildcareConnect web application is a trusted app for working parents specially for mom to find quality daycare at an affordable price
 
 ## Features
 This app currently includes the following list of features
@@ -24,31 +24,33 @@ This app currently includes the following list of features
 - Authentication: JWT for user authentication
 
 ## Sitemap
-![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/userdiagram.jpg)
+![userdiagram](https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/images/userdiagram.jpg)
 
 ## Mockup wireframes
 
 <div style="display: flex; justify-content: space-between;">
     <!-- First image with specific size -->
    <div style="flex: 1;">
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/home.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/home.png" alt="Image Description" width="200" height="200">
       </div>
+   <div style="flex: 1;">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/2-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+    </div>
     <!-- Second image with specific size -->
-    <div style="flex: 1;">
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
-  </div>
-    <div style="flex: 1;">
-        </div>
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+ 
+  <div style="flex: 1;">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/providerlogin.png" alt="Image Description" width="200" height="200">
     </div>
       <div style="flex: 1;">
-        </div>
-      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/signup-for-provider-2024-03-08-1646.png" alt="Image Description" width="200" height="200">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/provider-profile-03-08-1646.png" alt="Image Description" width="200" height="200">
+    </div>
+     <div style="flex: 1;">
+      <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/login-2024-03-08-1646.png" width="200" height="200">
     </div>
 </div>
 
 ## Data
-   <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/main/data.png" alt="Image Description" width="500" height="500">
+   <img src="https://github.com/dilualphonso/dilusha-alponso-childcareConnect-api/blob/feature/proposal/images/data.png" alt="Image Description" width="500" height="500">
 
 ## Endpoints
 This app's API server has the following list of endpoints:
@@ -74,18 +76,13 @@ This app's API server has the following list of endpoints:
 - **GET Search Daycare Centers**
    - Endpoint: `/api/daycares/search`
    - Description: Search for daycare centers based on specified filters.
+ 
+ - **Get reviews**
+- Endpoint: `/api/daycares/:id/reviews`
+- **Post reviews**
+- Endpoint: `/api/daycares/:id/reviews`
+ 
 
-
-#### Children API Endpoints
-
-- /api/daycares/children
-    - GET: Get a list of children from a particular daycare
-    - POST: Enroll a new child with details
-
-- /api/daycares/children/:id
-    - GET: Get detailed information about a specific child
-    - PUT: Update details for a specific child
-    - DELETE: Remove a specific child from the daycare
 
 #### Responses: 
   - 200 success for all GET and PUT/PATCH requests
@@ -102,6 +99,7 @@ Token-based authentication is a common method used to secure web applications. I
 ## Roadmap
 ## Sprint 1
 #### Backend Tasks:
+- Set up project structure
 - Implement GET endpoint to retrieve all daycares
 - Implement GET endpoint to retrieve a single daycare by ID
 - Implement POST endpoint to create a new daycare 
@@ -123,25 +121,10 @@ Token-based authentication is a common method used to secure web applications. I
 - Implement search input field on the daycare profile listing page
 - Update frontend to display search results 
 
-## Sprint 3
-
-#### Backend Tasks:
-- Implement GET endpoint to retrieve all children
-- Implement GET endpoint to retrieve a single child by ID
-- Implement POST endpoint to entroll new child
-- Implement PUT endpoint to update an existing child
-- Implement DELETE endpoint to update an existing child
-
-#### Frontend Tasks:
-- need to implement every thing to diplay the child details
-  
+ ## Sprint 3
+  - Allow users to add reviews and ratings for daycare centers.
+  - 
 ## Nice-to-haves
-
-#### Reviews for Daycares:
-- Allow users to add reviews and ratings for daycare centers.
-- Display average ratings and individual reviews on daycare detail pages.
-- Provide a form for users to submit reviews with ratings and comments.
-
 #### Google Maps Integration:
 - Implement Google Maps integration for displaying daycare locations.
 - Show daycare locations on a map in the search results and detail view.
@@ -156,6 +139,11 @@ Token-based authentication is a common method used to secure web applications. I
 - Create a login page for parents to access their accounts.
 - Implement authentication using JWT (JSON Web Tokens) for secure login.
 - Upon login, parents can view child-related details such as enrollment status, schedules, etc.
+
+#### Child entrollement 
+- Allow users to entroll childrens' details.
+- Display child detail view.
+
 
 
   
