@@ -5,6 +5,7 @@ const daycareRoute = require('./routes/daycare-route');
 const userRoute = require('./routes/user-route');
 
 
+
 const app = express();
 const port = process.env.port || process.argv[2] || 8080;
 const { CORS_ORIGIN } = process.env;
@@ -27,6 +28,8 @@ app.get('/', (_req, res) => {
 app.use('/api', daycareRoute);
 //inventory list route
 app.use('/api/users', userRoute);
+
+
 
 app.listen(port, () => {
   console.log(`Listening on ${port}`);

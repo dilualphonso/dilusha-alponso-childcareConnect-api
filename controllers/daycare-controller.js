@@ -1,20 +1,41 @@
 const knex = require('knex')(require('../knexfile'));
 
-const index = async (req, res) => {
+const index= async (req, res) => {
   try {
+
     const searchWord = req.query.s;
-    let query = knex("daycares");
+    let query = knex("daycares")
+      .leftJoin("reviews", "reviews.daycare_id", "daycares.id")
+      .select('daycares.id as daycare_id',
+      'daycares.childcare_name',
+      'daycares.age_range',
+      'daycares.address',
+      'daycares.city',
+      'daycares.postalcode',
+      'daycares.country',
+      'daycares.region',
+      'daycares.latitude',
+      'daycares.longitude',
+      'daycares.contact_phone',
+      'daycares.infant_capacity',
+      'daycares.toddler_capacity',
+      'daycares.preschool_capacity',
+      'daycares.contact_email')
+      .count('reviews.id as reviewCount')
+      .sum('reviews.rating as totalRating')
+      .groupBy('daycares.id');
 
-    if (searchWord) {
-      query.where(research => {
-        research.where('daycares.childcare_name', 'LIKE', `%${searchWord}%`)
-          .orWhere('daycares.city', 'LIKE', `%${searchWord}%`)
-          .orWhere('daycares.region', 'LIKE', `%${searchWord}%`)
-          .orWhere('daycares.country', 'LIKE', `%${searchWord}%`)
+      if (searchWord) {
+        query.where(research => {
+          research.where('daycares.childcare_name', 'LIKE', `%${searchWord}%`)
+            .orWhere('daycares.city', 'LIKE', `%${searchWord}%`)
+            .orWhere('daycares.region', 'LIKE', `%${searchWord}%`)
+            .orWhere('daycares.country', 'LIKE', `%${searchWord}%`)
 
-          .select('*');
-      })
-    }
+            .select('*');
+        })
+      }
+
     const data = await query;
 
     if (data.length === 0) {
@@ -22,12 +43,22 @@ const index = async (req, res) => {
         .status(200)
         .send({ message: `No result` });
     }
+    // Calculate mean rating for each daycare
+    data.forEach(daycare => {
+      if (daycare.reviewCount === 0) {
+        daycare.meanRating = 0;
+      } else {
+        daycare.meanRating = daycare.totalRating / daycare.reviewCount;
+      }
+    });
+
+
 
     res.status(200).json(data);
-  } catch(err) {
-    res.status(400).send(`Error retrieving Users: ${err}`)
+  } catch (err) {
+    res.status(400).send(`Error retrieving daycares: ${err}`);
   }
-}
+};
 
 const findOne = async (req, res) => {
   try {
@@ -69,8 +100,11 @@ const createDaycare = async (req, res) => {
   }
 };
 
+
+
 module.exports = {
   index,
   createDaycare,
-  findOne
+  findOne,
+
 }
