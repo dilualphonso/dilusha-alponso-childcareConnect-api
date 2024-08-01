@@ -8,7 +8,7 @@ const emailRoutes = require("./routes/email-route");
 
 
 const app = express();
-const port = process.env.port || process.argv[2] || 8080;
+const port = process.env.port || process.argv[2] || 3000;
 const { CORS_ORIGIN } = process.env;
 
 
